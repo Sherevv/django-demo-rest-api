@@ -15,7 +15,7 @@ For search use query params:
 
 `/api/vehicles/?mark=&model=&color=&reg=&year=&vin=&vrc=&vrc_date=`
 
-Example for searching BMW:
+Example for searching `BMW`:
 
 `/api/vehicles/?mark=BMW`
 
@@ -25,6 +25,7 @@ Based on [django-import-export](https://django-import-export.readthedocs.io/en/l
 Export path: 
 `/api/vehicles/export/csv/` or 
 `/api/vehicles/export/xls/`
+
 Import path:
 `/api/vehicles/import/csv/` or
 `/api/vehicles/import/xls/`
