@@ -1,4 +1,4 @@
-"""cars URL Configuration
+"""park URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -27,6 +27,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include(router.urls)),
-    re_path('api/vehicles/export/(?P<format>csv|xls)/', export_vehicle),
-    re_path('api/vehicles/import/(?P<format>csv|xls)/', import_vehicle),
+    re_path('api/vehicles/export/(?P<ext>csv|xls)/', export_vehicle),
+    re_path('api/vehicles/import/(?P<ext>csv|xls)/', import_vehicle),
 ]
