@@ -12,7 +12,7 @@ class VehicleResource(ModelResource):
         model = Vehicle
 
 
-def export_resource(request: HttpRequest, file_format: str, resource: ModelResource) -> HttpResponse:
+def export_resource(file_format: str, resource: ModelResource) -> HttpResponse:
     dataset = resource.export()
 
     if file_format == 'xls':

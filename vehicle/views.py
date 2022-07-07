@@ -8,7 +8,7 @@ from vehicle.resources import VehicleResource, export_resource, import_resource
 
 @permission_required('vehicle.view_vehicle')
 def export_vehicle(request: HttpRequest, ext: str) -> HttpResponse:
-    return export_resource(request, ext, VehicleResource())
+    return export_resource(ext, VehicleResource())
 
 
 @permission_required('vehicle.add_vehicle')
